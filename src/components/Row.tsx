@@ -55,7 +55,9 @@ export const Row = ({ title, fetchUrl, isLargeRow }: Props) => {
     try {
       //動画を取得する
       const response = await axios.get(
-        `/movie/${movie.id}/videos?api_key=bd7eea18634b6c3711188e5471ec275f`,
+        `/movie/${movie.id}/videos?api_key=${
+          import.meta.env.VITE_NEXT_PUBLIC_TMDB_API_KEY
+        }`,
       )
       //動画の配列の0番目のkeyにYouTubeのidが入っているので代入する
       setTrailerUrl(response.data.results[0]?.key ?? null)
