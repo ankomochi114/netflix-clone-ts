@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.scss'
 import { Row } from './components/organisms/Row'
 import { Nav } from './components/organisms/Nav'
