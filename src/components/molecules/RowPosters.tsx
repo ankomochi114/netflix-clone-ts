@@ -1,7 +1,7 @@
 import { movieProps } from '../../type'
 import { RowPoster } from '../atomos/RowPoster'
 import { useState } from 'react'
-import axios from 'axios'
+import axios from '../../axios'
 import YouTube from 'react-youtube'
 import { useMovies } from '../../hooks/useMovies'
 
